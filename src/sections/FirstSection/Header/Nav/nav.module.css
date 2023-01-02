@@ -1,0 +1,28 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+}
+.nav>img{
+    cursor: pointer;
+}
+.nav>a{
+    text-decoration:none;
+    color: black;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    transition: 5s;
+}
+
+
+@media (max-width:834px) {
+    .nav{
+        display: none;
+    }
+}
