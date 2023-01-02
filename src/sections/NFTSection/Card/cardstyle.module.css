@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 412px;
+    max-height: 514px; 
+    text-align: center;
+
+}
+@media (max-width:768px) {
+    .card{
+        width: 240.67px;
+        height: 404px;
+    }
+}
+
+

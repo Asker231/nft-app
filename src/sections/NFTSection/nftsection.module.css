@@ -1,0 +1,60 @@
+.wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    padding: 40px;
+
+}
+.wrap>.title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.title>h1{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
+.title>p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: flex-start;
+    gap: 20px;
+
+}
+.cards>a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media (max-width:876px) {
+.cards{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media (max-width:426px) {
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2px;
+    }
+     
+ 
+
+    }
