@@ -19,14 +19,13 @@ const Header = () => {
          itemSeconde={leftnavItems[1]}
          itemNext={leftnavItems[2]}
          />
-        {isTrue==false?<img
+      <img
          onClick={()=>setIstrue(!isTrue)}
           className={style.burger}
           src={burger} 
-          alt="tab" />:null}
-
-          <div style={{opacity:isTrue?"1":"0",top:isTrue?"10px" : "720px", }} className={style.menu}>
-            <header><span onClick={()=>setIstrue(!isTrue)}>&times;</span></header>
+          alt="tab" />
+          <div style={{opacity:isTrue?"1":"0",top:isTrue?"50px" : "720px", }} className={style.menu}>
+            <header><span onClick={()=>setIstrue(!isTrue)}>X</span></header>
           </div>
 
           

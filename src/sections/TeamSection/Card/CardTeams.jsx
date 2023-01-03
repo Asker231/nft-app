@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './cardTeam.module.css';
 
-const CardTeams = ({image,title,text}) => {
+const CardTeams = ({image,title,text,bg}) => {
   return (
-    <div className={style.card}>
+    <div style={{backgroundColor:`${bg}`}} className={style.card}>
         <img src={image} alt="image"/>
         <h2>{title}</h2>
         <span>{text}</span>
