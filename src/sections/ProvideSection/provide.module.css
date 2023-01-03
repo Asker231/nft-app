@@ -26,7 +26,7 @@
     color: #532C59;
 }
 
-.provide>section{
+.provide>.section{
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -36,7 +36,7 @@
 
 
 @media (max-width:425px) {
-    section>div:nth-child(1){
+    .section>div:nth-child(1){
         border-top: 1px solid #1b85dc6e;
         width: 300px;
         border-top-right-radius: 0px;
@@ -44,7 +44,7 @@
         border-bottom: 2px solid #1b85dc6e;
         border-bottom-right-radius: 0px;
     }
-    section>div:nth-child(2){
+    .section>div:nth-child(2){
         width: 300px;
         border-top-right-radius: 0px;
         border-right: 3px solid #1b85dc6e;
@@ -52,7 +52,7 @@
         border-bottom-left-radius: 0px;
        
     }
-    section>div:nth-child(3){
+    .section>div:nth-child(3){
         
         width: 300px;
         border-top-left-radius: 0px;
@@ -60,7 +60,7 @@
         border-bottom: 4px solid #1b85dc6e;
         border-bottom-right-radius: 0px;
     }
-    section>div:nth-child(4){
+    .section>div:nth-child(4){
         width: 300px;
         border-top-right-radius: 0px;
         border-right: 5px solid #1b85dc6e;
