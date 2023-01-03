@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import style from './nftsection.module.css';
 import { cardInfo } from './card.prop';
 import Card from './Card/Card';
-
+import { Link } from 'react-router-dom';
 
 const NFTSection = () => {
     const[cardinfo,setCardInfo] = useState([])
@@ -19,13 +19,12 @@ const NFTSection = () => {
         <div className={style.cards}>
               {
                 cardinfo.map((el,ind)=>{
-                    return<a href='#'> <Card 
+                    return<Link to="#"> <Card 
                     key={ind}
                     cardImage={el.image}
                     title={el.title}
                     text={el.description}
-                     />
-                     </a>
+                     /></Link>
                 })
               }
         </div>

@@ -1,0 +1,124 @@
+.team{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   width: 100%;
+   justify-content: center;
+   padding: 20px;
+}
+.titleSection{
+   text-align: center;
+}
+.titleSection>h1{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
+.titleSection>p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #532C59;
+}
+.team>.gridSection{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background:linear-gradient(120deg,rgb(11, 134, 172),rgba(157, 33, 234, 0.441));
+  padding: 20px;
+  border-radius: 20px;
+  gap: 10px;
+  overflow: hidden;
+
+}
+
+.team>.gridSection>div:nth-child(1){
+    animation: go 4s linear infinite;
+}
+@keyframes go {
+    0%{
+      left: -160px;
+      top: -90px;
+      
+    }20%{
+      left: -80px;
+      top: -70px;
+      
+    }40%{
+      left: -60px;
+      top: -50px;
+     
+    }60%{
+      left: -40px;
+      top: -30px;
+    }80%{
+       left: -20px;
+       top: -10px;
+      
+    }100%{
+        left: 10px;
+        top: 0px;
+        top: -10px;
+        opacity: 0;
+    }
+}
+
+
+.team>.gridSection>div:nth-child(2){
+    animation: go1 5s linear infinite;
+}
+@keyframes go1 {
+    0%{
+      left: 160px;
+      top: -100px;
+      
+    }100%{
+        left: 10px;
+        top: 0px;
+        top: 110px;
+        opacity: 0;
+    }
+}
+
+
+.team>.gridSection>div:nth-child(3){
+    animation: gos 5s linear infinite;
+}
+@keyframes gos {
+    0%{
+      left: 160px;
+      top: -100px;
+      
+    }100%{
+        left: 10px;
+        top: 0px;
+        top: 110px;
+        opacity: 0;
+    }
+}
+
+
+
+.team>.gridSection>div:nth-child(4){
+    animation: go4 5s linear infinite;
+}
+@keyframes go4 {
+    0%{
+      left: 160px;
+      top: -170px;
+      
+    }100%{
+        left: 10px;
+        top: 0px;
+        top: 190px;
+        opacity: 0.8;
+    }
+}
